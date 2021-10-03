@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: hsl(0, 0%, 98%);
+    --light-violet: hsl(268, 100%, 86%);
+    --violet: hsl(268, 34%, 53%);
+    --sky: hsl(192, 90%, 77%);
+    --light-cyan: hsl(192, 54%, 64%);
+    --cyan: hsl(192, 37%, 48%);
+    --gray: hsl(240, 10%, 57%);
+    --black: hsl(240, 21%, 20%);
+
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--bg-color);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--gray);
+}
+
+header {
+    padding: 80px 0 0 0;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 64px;
+    color: var(--black);
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    color: var(--black);
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--cyan);
+}
+
+img {
+    vertical-align: top;
+}
+
+footer {
+    background: url(./images/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-color: var(--cyan);
+    height: 308px;
+    padding: 0 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h2 {
+    width: 350px;
+    color: var(--bg-color);
+}
+
+footer p {
+    width: 350px;
+    color: var(--bg-color);
+}
+
+footer button span {
+    color: var(--light-violet);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.overline-outer {
+    width: 100%;
+    text-align: center;
+}
+
+.overline {
+    position: relative;
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    padding: 15px 0;
+    background-color: var(--bg-color);
+    color: var(--gray);
+    border: 1px solid hsla(240, 10%, 57%, 0.25);
+    border-radius: 29px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.overline::before {
+    position: absolute;
+    bottom: 56px;
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 84px;
+    background-color: var(--gray);
+    opacity: 0.25;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 348px;
+}
+
+button {
+    height: 58px;
+    border: none;
+    border-radius: 29px;
+    padding: 16px 29px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+}
+
+button > span {
+    color: var(--sky);
+}
+
+.btn--cyan {
+    background-color: var(--cyan);
+}
+
+.btn--cyan:hover {
+    background-color: var(--light-cyan);
+}
+
+.btn--violet {
+    background-color: var(--violet);
+}
+
+.btn--violet:hover {
+    background-color: var(--light-violet);
+}
+
+.album {
+    display: flex;
+    max-width: 1100px;
+    justify-content: space-between;
+    margin: 64px auto 80px auto;
+}
+
+.album img {
+    width: 255px;
+    height: 242px;
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    header {
+        padding: 48px 0 0 0;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    footer {
+        height: 428px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: none;
+    }
+
+    footer h2 {
+        width: 350px;
+        color: var(--bg-color);
+        text-align: center;
+    }
+    
+    footer p {
+        width: 350px;
+        color: var(--bg-color);
+        text-align: center;
+    }
+
+    .container {
+        max-width: 457px;
+    }
+
+    .album {
+        width: 689px;
+        height: 156px;
+    }
+
+    .album img {
+        width: 164px;
+        height: 156px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 400px){
+    header {
+        padding: 48px 0 0 0;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    
+    h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    footer {
+        height: 428px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: none;
+    }
+
+    footer h2 {
+        width: 350px;
+        color: var(--bg-color);
+        text-align: center;
+    }
+    
+    footer p {
+        width: 350px;
+        color: var(--bg-color);
+        text-align: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: 327px;
+    }
+
+    .album {
+        width: 327px;
+        height: 310px;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    .album img {
+        width: 151px;
+        height: 143px;
+    }
+}
